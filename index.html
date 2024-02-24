@@ -12,9 +12,13 @@
 </head>
 
 <body>
-  <header class="container">
+  <header>
     <div class="header">
       <h1>Currency Converter</h1>
+    </div>
+    <nav class="header">
+      <img src="/img/menu.png" alt="Menu">
+    </nav>
   </header>
   <!-- MAIN SECTION -->
   <section class="main">
@@ -31,7 +35,7 @@
       </select>
     </div>
     <div>
-      <img onclick="convert()" src="/img/convert.png" alt="Convert">
+      <img class="convert" onclick="convert()" src="/img/convert.png" alt="Convert">
     </div>
     <div class="output">
       <input type="number" id="output" disabled>
@@ -46,6 +50,11 @@
       </select>
     </div>
   </section>
+  <!-- FOOTER SECTION -->
+  <footer>
+    <div class="footer">
+      <p>Icons by <a href="icons8.de">Icons8</a></p>
+    </div>
 </body>
 
 </html>

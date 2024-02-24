@@ -27,3 +27,51 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+/* HEADER STYLE */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* NAVBAR STYLE */
+nav img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+nav img:hover{
+    transform: scale(1.1);
+    transition: all ease-in-out 225ms;
+}
+/* MAIN STYLE */
+.main {
+    background-color: #f1f1f1;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 100px;
+}
+.convert{
+    cursor: pointer;
+}
+.convert:hover{
+    transform: scale(1.1);
+    transition: all ease-in-out 225ms;
+}
+/* FOOTER STYLE */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 20px 100px;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
