@@ -8,16 +8,44 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="fontface.css">
   <script src="script.js" defer></script>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.png">
 </head>
 
 <body>
-  <!-- TOP SECTION -->
-  <header></header>
-  <!-- MAIN SECTION  -->
-  <section></section>
-  <!-- FOOTER SECTION -->
-  <footer></footer>
+  <header class="container">
+    <div class="header">
+      <h1>Currency Converter</h1>
+  </header>
+  <!-- MAIN SECTION -->
+  <section class="main">
+    <div class="input">
+      <input type="number" min="0.1" id="input" placeholder="Enter Amount">
+      <select id="from">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="JPY">JPY</option>
+        <option value="GBP">GBP</option>
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="CHF">CHF</option>
+      </select>
+    </div>
+    <div>
+      <img onclick="convert()" src="/img/convert.png" alt="Convert">
+    </div>
+    <div class="output">
+      <input type="number" id="output" disabled>
+      <select id="to">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="JPY">JPY</option>
+        <option value="GBP">GBP</option>
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="CHF">CHF</option>
+      </select>
+    </div>
+  </section>
 </body>
 
 </html>
