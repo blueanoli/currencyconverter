@@ -11,7 +11,7 @@
   <link rel="icon" type="image/x-icon" href="/img/favicon.png">
 </head>
 
-<body>
+<body onload="init()">
   <header>
     <div class="header">
       <h1>Currency Converter</h1>
@@ -25,13 +25,13 @@
     <div class="input">
       <input type="number" min="0.01" id="input" placeholder="Enter Amount">
       <select id="from">
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="JPY">JPY</option>
-        <option value="GBP">GBP</option>
-        <option value="AUD">AUD</option>
-        <option value="CAD">CAD</option>
-        <option value="CHF">CHF</option>
+        <option id="usd" value="USD">USD</option>
+        <option id="eur" value="EUR">EUR</option>
+        <option id="jpy" value="JPY">JPY</option>
+        <option id="gbp" value="GBP">GBP</option>
+        <option id="aud" value="AUD">AUD</option>
+        <option id="cad" value="CAD">CAD</option>
+        <option id="chf" value="CHF">CHF</option>
       </select>
     </div>
     <div class="convert-div">
