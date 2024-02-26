@@ -34,5 +34,3 @@ function convert() {
 
     document.getElementById('output').value = result.toFixed(2);
 }
-
-init();
