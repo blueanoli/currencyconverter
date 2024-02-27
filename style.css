@@ -15,6 +15,9 @@ body {
     min-height: 100vh;
     width: 100%;
 }
+h1{
+    white-space: nowrap;
+}
 /* SCROLLBAR STYLE */
 ::-webkit-scrollbar {
     width: 10px;
@@ -31,22 +34,12 @@ body {
 /* HEADER STYLE */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 100px;
     background-color: #fff;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-/* NAVBAR STYLE */
-nav img{
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-}
-nav img:hover{
-    transform: scale(1.1);
-    transition: all ease-in-out 225ms;
 }
 /* MAIN STYLE */
 .main {
@@ -59,22 +52,21 @@ nav img:hover{
     padding: 20px 100px;
     width: 100%;
 }
-.convert-div{
-    width: 100%;
+.input{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: nowrap;
+    max-width: 75%;
+    margin: 20px 0;
 }
-.convert{
-    cursor: pointer;
-    padding: 10px 20px;
+.output{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.convert:hover{
-    transform: scale(1.1);
-    transition: all ease-in-out 225ms;
+    flex-direction: nowrap;
+    max-width: 75%;
+    margin: 20px 0;
 }
 input{
     padding: 10px;
@@ -82,6 +74,22 @@ input{
     border: 1px solid #000;
     border-radius: 5px;
     outline: none;
+    width: 75%;
+}
+input:focus::placeholder{
+    position: absolute;
+    top: -4px;
+    left: 10px;
+    font-size: 12px;
+    color: #1a314e;
+}
+select{
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid #000;
+    width: 25%;
+
 }
 /* FOOTER STYLE */
 footer {

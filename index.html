@@ -16,14 +16,11 @@
     <div class="header">
       <h1>Currency Converter</h1>
     </div>
-    <nav class="header">
-      <img src="/img/menu.png" alt="Menu">
-    </nav>
   </header>
   <!-- MAIN SECTION -->
   <section class="main">
     <div class="input">
-      <input type="number" min="0.01" id="input" placeholder="Enter Amount">
+      <input oninput="convert()" type="number" min="0.01" id="input" placeholder="Enter Amount">
       <select id="from">
         <option value="USD">USD</option>
         <option value="EUR">EUR</option>
@@ -33,9 +30,6 @@
         <option value="CAD">CAD</option>
         <option value="CHF">CHF</option>
       </select>
-    </div>
-    <div class="convert-div">
-      <img class="convert" onclick="convert()" src="/img/convert.png" alt="Convert">
     </div>
     <div class="output">
       <input type="number" id="output" disabled>
