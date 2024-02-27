@@ -57,7 +57,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: nowrap;
-    max-width: 75%;
+    width: 75%;
     margin: 20px 0;
 }
 .output{
@@ -65,7 +65,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: nowrap;
-    max-width: 75%;
+    width: 75%;
     margin: 20px 0;
 }
 input{
@@ -74,13 +74,13 @@ input{
     border: 1px solid #000;
     border-radius: 5px;
     outline: none;
-    width: 75%;
+    width: 100%;
 }
 input:focus::placeholder{
     position: absolute;
-    top: -4px;
+    top: 0;
     left: 10px;
-    font-size: 12px;
+    font-size: 10px;
     color: #1a314e;
 }
 select{
@@ -88,7 +88,7 @@ select{
     border-radius: 5px;
     padding: 8px;
     border: 1px solid #000;
-    width: 25%;
+    width: 30%;
 
 }
 /* FOOTER STYLE */
